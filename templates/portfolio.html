@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ndichu Mwangi - Web Developer</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="web development" name="web development">
+        <meta content="web development" name="web developer">
+        <meta content="web development" name="web">
+        <meta content="web development" name="SEO">
+        <meta content="web development" name="web design">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/animate/animate.min.css') }}">
+
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css') }}">
+
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/lightbox/css/lightbox.min.css') }}">
+
+
+        <!-- Template Stylesheet -->
+         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    WebFolio</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="#price" class="nav-item nav-link">Price</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+
+                                <h1>My Portfolio</h1>
+                                <h2></h2>
+                                <div class="typed-text">E-Commerce, Informational, Blogs, Business
+                                    Portfolios, Educational</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+         <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Portfolio</p>
+                    <h2>My Excellent Portfolio</h2>
+                </div>
+
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+
+                                <img src="{{url_for('static',filename = 'img/fashion.png')}}">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Company Websites</h3>
+                                <a class="btn"
+                                   href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/fashion+website/index.html"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+
+                                <img src="{{url_for('static',filename = 'img/e-commerce.png')}}" >
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>E-Commerce Sites</h3>
+                                <a class="btn" href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/E-commerce+html+css/index.html"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+
+                                <img src="{{url_for('static',filename = 'img/education.png')}}" >
+
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Informational Sites</h3>
+                                <a class="btn" href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/html+css/index.html"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+
+                                <img src="{{url_for('static',filename = 'img/mock.png')}}" >
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Mock</h3>
+                                <a class="btn" href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/html+css+bootsrap/index.html"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+
+                                <img src="{{url_for('static',filename = 'img/mock1.png')}}" >
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Prodcut Sites</h3>
+                                <a class="btn" href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/html+css+bootstrap+2/index.html"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+
+                                <img src="{{url_for('static',filename = 'img/travel-website.png')}}" >
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Travel Sites</h3>
+                                <a class="btn" href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/travel+website/travel/index.html"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Banner Start -->
+
+        <!-- Banner End -->
+
+
+        <!-- Price Start -->
+        <div class="price" id="price">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Pricing Plan</p>
+                    <h2>Affordable Price</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Web Development</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>KES</small>&nbsp;&nbsp; 5000<span>/ Website</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Clean attractive User Interface</li>
+                                        <li>Mobile Responsive</li>
+                                        <li>Friendly User Experience</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="#contact">Get More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="col-sm-12 col-md-6 d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Website Management</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>KES</small>&nbsp;&nbsp;4000<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>SEO and Keywords</li>
+                                        <li>Social Media</li>
+                                        <li>Benchmarking</li>
+                                        <li>Website Monitoring</li>
+                                        <li>Weekly Snapshot Email</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Price End -->
+
+
+        <!-- Testimonial Start -->
+      <!--  <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+            <div class="container">
+                <div class="testimonial-icon">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <!-- <div class="team" id="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Team</p>
+                    <h2>Expert Team Members</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Mollie Ross</h2>
+                                <h4>Web Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dylan Adams</h2>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Jennifer Page</h2>
+                                <h4>Apps Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Josh Dunn</h2>
+                                <h4>Apps Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+
+
+
+
+
+
+
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s" id="footer">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Ndichu Mwangi</h2>
+                        <h3>Nairobi, Kenya</h3>
+                        <div class="footer-menu">
+                            <p>+254 705904400
+                            </p>
+                            <p>ndichumwangi7@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://twitter.com/Ndxxxu"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ndichu._mwangi/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ndichu-mwangi-7400a4204/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="container copyright">
+                    <p>&copy; <a href="https://techy-webster.herokuapp.com/">Techy Webster WebFolio</a>, All Right Reserved | <a href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/My+Freelance+Contract.pdf">Web Development Agreement</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/easing/easing.min.js') }}"></script>
+
+
+
+        <script src="{{ url_for('static',filename='lib/wow/wow.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/waypoints/waypoints.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/typed/typed.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="{{ url_for('static',filename='mail/jqBootstrapValidation.min.js') }}"></script>
+
+
+
+        <script src="{{ url_for('static',filename='mail/contact.js') }}"></script>
+        <!-- Template Javascript -->
+        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    </body>
+</html>

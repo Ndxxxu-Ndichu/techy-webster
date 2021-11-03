@@ -2,10 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>DevFolio - Developer Portfolio Template</title>
+        <title>Ndichu Mwangi - Web Developer</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+        <meta content="web development" name="web development">
+        <meta content="web development" name="web developer">
+        <meta content="web development" name="web">
+        <meta content="web development" name="SEO">
+        <meta content="web development" name="web design">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -16,12 +19,18 @@
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/animate/animate.min.css') }}">
+
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css') }}">
+
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/lightbox/css/lightbox.min.css') }}">
+
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -74,7 +83,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/1.png" alt="Image">
+
+                            <img src="{{url_for('static',filename = 'img/1.png')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -119,7 +129,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/2.jpeg" alt="Image">
+
+                             <img src="{{url_for('static',filename = 'img/2.jpeg')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -160,7 +171,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/3.jpg" alt="Image">
+
+                             <img src="{{url_for('static',filename = 'img/3.jpg')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -202,7 +214,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
+
+                             <img src="{{url_for('static',filename = 'img/about.jpg')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -247,7 +260,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/5.jpg" alt="Image">
+
+                             <img src="{{url_for('static',filename = 'img/5.jpg')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -293,7 +307,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/6.jpg" alt="Image">
+
+                             <img src="{{url_for('static',filename = 'img/6.jpg')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -338,7 +353,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/7.jpg" alt="Image">
+
+                             <img src="{{url_for('static',filename = 'img/7.jpg')}}" >
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -674,17 +690,15 @@
                             </p>
                             <p>ndichumwangi7@gmail.com</p>
                         </div>
-                        <div class="footer-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                       <div class="footer-social">
+                            <a href="https://twitter.com/Ndxxxu"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ndichu._mwangi/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ndichu-mwangi-7400a4204/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="container copyright">
-                    <p>&copy; <a href="#">Techy Webster WebFolio</a>, All Right Reserved | <a href="">Web Development Agreement</a></p>
+                    <p>&copy; <a href="https://techy-webster.herokuapp.com/">Techy Webster WebFolio</a>, All Right Reserved | <a href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/My+Freelance+Contract.pdf">Web Development Agreement</a></p>
                 </div>
             </div>
         </div>
@@ -704,19 +718,36 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
 
+
+        <script src="{{ url_for('static',filename='lib/easing/easing.min.js') }}"></script>
+
+
+
+        <script src="{{ url_for('static',filename='lib/wow/wow.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/waypoints/waypoints.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/typed/typed.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="{{ url_for('static',filename='mail/jqBootstrapValidation.min.js') }}"></script>
+
+
+
+        <script src="{{ url_for('static',filename='mail/contact.js') }}"></script>
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
     </body>
 </html>

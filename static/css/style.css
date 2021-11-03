@@ -223,6 +223,7 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #00bfff;
+        font-size: 25px
     }
     
     .navbar .navbar-nav {
@@ -796,7 +797,7 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .service {
-        height: 400px;
+        height: 1200px;
         
     }
     .service .service-text h3 {
@@ -860,6 +861,7 @@ a:focus {
 .portfolio .portfolio-wrap {
     position: relative;
     width: 100%;
+    padding: 15px;
 }
 
 .portfolio .portfolio-img {
@@ -919,9 +921,7 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
-    .portfolio {
-        margin-top: 500px;
-    }
+
 }
 
 
