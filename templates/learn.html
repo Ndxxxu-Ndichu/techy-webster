@@ -447,6 +447,35 @@
                         <div class="price-item">
                             <div class="price-header">
                                 <div class="price-title">
+                                    <h2>Website Management</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>KES</small>&nbsp;&nbsp;4000<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>SEO and Keywords</li>
+                                        <li>Social Media</li>
+                                        <li>Benchmarking</li>
+                                        <li>Website Monitoring</li>
+                                        <li>Weekly Snapshot Email</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="/learn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
                                     <h2>Web Development</h2>
                                 </div>
                                 <div class="price-prices">
@@ -476,35 +505,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h2>Website Management</h2>
-                                </div>
-                                <div class="price-prices">
-                                    <h2><small>KES</small>&nbsp;&nbsp;4000<span>/ mo</span></h2>
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <ul>
-                                        <li>SEO and Keywords</li>
-                                        <li>Social Media</li>
-                                        <li>Benchmarking</li>
-                                        <li>Website Monitoring</li>
-                                        <li>Weekly Snapshot Email</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="price-footer">
-                                <div class="price-action">
-                                    <a class="btn" href="/learn">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -663,23 +664,21 @@
                         <div class="col-md-8">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form novalidate="novalidate" method="post" action="/">
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                     <div class="control-group">
-                                        <input name="name" type="text" class="form-control" id="name"
-                                               placeholder="Your Name"
-                                                required="required" data-validation-required-message="Please enter your name" />
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input name="email" type="email" class="form-control" id="email"
-                                               placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                                         <p class="help-block"></p>
                                     </div>
-
                                     <div class="control-group">
-                                        <textarea name="message" class="form-control" id="message"
-                                                  placeholder="Message"
-                                                   required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                         <p class="help-block"></p>
                                     </div>
                                     <div>
