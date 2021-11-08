@@ -312,6 +312,7 @@ a:focus {
     font-size: 35px;
     font-weight: 300;
     color: #ffffff;
+    display: none;
 }
 
 .hero .hero-btn .btn {
@@ -335,6 +336,7 @@ a:focus {
 @media (max-width: 991.98px) {
     .hero {
         padding-top: 60px;
+
     }
     
     .hero .hero-content {
