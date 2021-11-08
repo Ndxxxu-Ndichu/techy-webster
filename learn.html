@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Ndichu Mwangi - Web Developer</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="web development" name="web development">
+        <meta content="web development" name="web developer">
+        <meta content="web development" name="web">
+        <meta content="web development" name="SEO">
+        <meta content="web development" name="web design">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/animate/animate.min.css') }}">
+
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css') }}">
+
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lib/lightbox/css/lightbox.min.css') }}">
+
+
+        <!-- Template Stylesheet -->
+         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173051986-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173051986-1');
+</script>
+
+
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    WebFolio</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="#price" class="nav-item nav-link">Price</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                
+                                <h1>Website Management</h1>
+                                <h2></h2>
+                                <div class="typed-text">Want to Improve your search engine rankings?</div>
+                            </div>
+                            <div class="hero-btn">
+                                <a class="btn" href="#contact" style="color:#696969">Hire Me</a>
+                                <a class="btn" href="#footer" style="color:#696969">Contact Me</a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                            <img src="{{url_for('static',filename = 'img/1.png')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Website Management</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p> Grow Your Website or Online Business with SEO.
+                                    I combine your actual analytics data with a
+                                    deep analysis of your
+                                    website, competitors’ websites, and industry benchmarks to tell you how to quickly grow online. I work everyday to create custom growth objectives and alerts to help you improve your:
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;SEO</p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Social</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Mobile</p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Visitor Experience</p><p></p>
+                                </div>
+                                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                             <img src="{{url_for('static',filename = 'img/2.jpeg')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>SEO</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    I don’t just show you keyword rankings, I help you get new ones! Even better, if your business experiences a rankings drop on Google, I will know what page on your website was affected and I will fix it.
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Track important SEO keywords and backlinks</p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Monitor your comptetitors rankings and changes</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Get new Keyword and content ideas</p><p></p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                             <img src="{{url_for('static',filename = 'img/3.jpg')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Social Media</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    In today’s world, mastering social media is a big part of growing online. I am here to help make it easier. I sync to your social media data and give you insights based on real data.
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Make sure your audience is engaging with posts</p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Be active when your followers are online</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Maintain a regular social media calender</p><p></p>
+                                </div>
+                                
+                                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                             <img src="{{url_for('static',filename = 'img/about.jpg')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Benchmarking</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Every website is unique, but it is still helpful to see how you are performing versus similar websites. Is your bounce rate abnormally high? How good is your percentage of return visitors?
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;See how your website stacks up against the competition</p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Email deliverability (Make sure your emails dont go to spam)</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Improove areas where you are underperforming</p><p></p>
+                                </div>
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Track progress verses other websites</p><p></p>
+                                </div>
+                                
+                                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                             <img src="{{url_for('static',filename = 'img/5.jpg')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Website Monitoring</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Sleep easy tonight! I automate Website Monitoring to let you know if I detect any issues.
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Speed and Security monitoring
+                                    </p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Email deliverability (Make sure your emails dont go to spam)</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Ranking Changes</p><p></p>
+                                </div>
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Competitor Activity</p><p></p>
+                                </div>
+                                
+                                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                             <img src="{{url_for('static',filename = 'img/6.jpg')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Health Score</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Your Daily Health Score is the easiest way to check if your website is healthy. I combine 12 metrics into a single score that assesses your website’s overall performance. I even take into account how you are performing versus similar websites
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;I Utilize an advanced predictive algorithm
+                                    </p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Examine growth, user experience, social, mobile and more</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Adapts to seasonality and day-of-week variations to accurately gauge website health</p><p></p>
+                                </div>
+                                
+                                
+                                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+
+                             <img src="{{url_for('static',filename = 'img/7.jpg')}}" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Weekly Emails</p>
+                                <h2></h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Feeling busy? Your new Weekly Snapshot gives you a quick glimpse into how your business is performing online.
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Traffic and rankings changes (local + national)
+                                    </p><p></p>
+                                </div>
+                                
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Social performance and local map (if applicable) statistics</p><p></p>
+                                </div>
+                               
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;New opportunities for growth</p><p></p>
+                                </div>
+                                <div class="skill-name">
+                                    <p><i class="fas fa-check-square" style="color:#00bfff"></i>&nbsp;&nbsp;Security, speed, and SEO overview</p><p></p>
+                                </div>
+                                
+                                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+        
+        <!-- Banner Start -->
+        
+        <!-- Banner End -->
+        
+        
+        <!-- Price Start -->
+        <div class="price" id="price">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Pricing Plan</p>
+                    <h2>Affordable Price</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Website Management</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>KES</small>&nbsp;&nbsp;4000<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>SEO and Keywords</li>
+                                        <li>Social Media</li>
+                                        <li>Benchmarking</li>
+                                        <li>Website Monitoring</li>
+                                        <li>Weekly Snapshot Email</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="/learn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Web Development</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>KES</small>&nbsp;&nbsp; 5000<span>/ Website</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Clean attractive User Interface</li>
+                                        <li>Mobile Responsive</li>
+                                        <li>Friendly User Experience</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="#contact">Get More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="col-sm-12 col-md-6 d-none d-md-block">
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Price End -->
+        
+        
+        <!-- Testimonial Start -->
+      <!--  <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+            <div class="container">
+                <div class="testimonial-icon">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <!-- <div class="team" id="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Team</p>
+                    <h2>Expert Team Members</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Mollie Ross</h2>
+                                <h4>Web Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dylan Adams</h2>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Jennifer Page</h2>
+                                <h4>Apps Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Josh Dunn</h2>
+                                <h4>Apps Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        
+
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s" id="footer">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Ndichu Mwangi</h2>
+                        <h3>Nairobi, Kenya</h3>
+                        <div class="footer-menu">
+                            <p>+254 705904400
+                            </p>
+                            <p>ndichumwangi7@gmail.com</p>
+                        </div>
+                       <div class="footer-social">
+                            <a href="https://twitter.com/Ndxxxu"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ndichu._mwangi/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ndichu-mwangi-7400a4204/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p>&copy; <a href="https://techy-webster.herokuapp.com/">Techy Webster WebFolio</a>, All Right Reserved | <a href="https://ndichu-portfolio.s3.us-east-2.amazonaws.com/My+Freelance+Contract.pdf">Web Development Agreement</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/easing/easing.min.js') }}"></script>
+
+
+
+        <script src="{{ url_for('static',filename='lib/wow/wow.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/waypoints/waypoints.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/typed/typed.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+
+
+        <script src="{{ url_for('static',filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="{{ url_for('static',filename='mail/jqBootstrapValidation.min.js') }}"></script>
+
+
+
+        <script src="{{ url_for('static',filename='mail/contact.js') }}"></script>
+        <!-- Template Javascript -->
+        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    </body>
+</html>
